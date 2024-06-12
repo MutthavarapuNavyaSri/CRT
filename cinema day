@@ -21,3 +21,24 @@ Sample Input 0
 Sample Output 0
 
 Cinema Day
+source code:
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int d,m,y,s;
+    scanf("%d\n%d\n%d\n%d",&d,&m,&y,&s);
+    int sum=d+y+m;
+    int product=3*4;
+    if(sum%product==0 && s>50 && s<100)
+    {
+        printf("Cinema Day");
+    }
+    else
+    {
+        printf("Not a Cinema Day");
+    }
+    return 0;
+}
